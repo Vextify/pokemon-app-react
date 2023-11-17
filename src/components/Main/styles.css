@@ -1,0 +1,697 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: white;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #dad5e1;
+  border: 1px solid #c8a543;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(42, 78, 101);
+}
+
+.maxContainer {
+  background-image: url(assets/pretty1.png);
+  background-attachment: fixed;
+  background-size: contain;
+  width: 100%;
+}
+.maxContainer2 {
+  background-image: url(assets/pretty2.png);
+  background-attachment: fixed;
+  background-size: contain;
+  width: 100%;
+}
+.maxContainer3 {
+  background-image: url(assets/pretty3.jpg);
+  background-attachment: fixed;
+  background-size: contain;
+  width: 100%;
+}
+.container {
+  width: 90%;
+  margin: auto;
+  padding-top: 100px;
+  display: flex;
+}
+
+.left-content,
+.right-content {
+  flex-basis: 50%;
+}
+
+.left-content {
+  display: grid;
+  gap: 11px;
+  grid-template-columns: 0.8fr 1fr 2fr 2fr;
+  grid-template-rows: 0.2fr 1fr 1fr;
+  justify-content: space-around;
+  transition: all 1s;
+}
+
+.right-content {
+  width: 25%;
+  height: 100%;
+  text-align: center;
+  color: white;
+  position: fixed;
+  top: 90px;
+  left: 1375px;
+}
+
+.right-content img {
+  margin: 1rem;
+  height: 180px;
+}
+
+.right-content h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.right-content2 {
+  width: 25%;
+  height: 100%;
+  text-align: center;
+  color: white;
+  position: fixed;
+  top: 90px;
+  left: 1375px;
+}
+
+.right-content2 img {
+  margin: 1rem;
+  height: 180px;
+}
+
+.right-content2 h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.abilities {
+  width: 20%;
+  margin: auto;
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.abilities .group {
+  background-color: #83b570;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  font-size: 12px;
+  border-radius: 8px;
+}
+
+.abilities p {
+  color: transparent;
+  font-size: 0.1rem;
+}
+
+.base-stat {
+  margin-top: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+.card {
+  width: 300px;
+  background-image: linear-gradient(to top, #343d42 0%, #4a5053 100%);
+  border-radius: 1rem;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.searchCard {
+  width: 300px;
+  background-image: linear-gradient(to top, #343d42 0%, #4a5053 100%);
+  border-radius: 1rem;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  padding: 0 1.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  font-size: 0.8rem;
+  color: #fff;
+  cursor: pointer;
+  position: fixed;
+  top: 170px;
+  left: 100px;
+}
+
+.noShow {
+  display: none;
+}
+
+.loadingScreen {
+  display: flex;
+  height: 88vh;
+  color: #4a5053;
+}
+
+.loadingScreen img {
+  width: 1920px;
+  height: 1080px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.battleScene {
+  width: 100%;
+  position: fixed;
+  bottom: 0%;
+}
+
+.startButton {
+  font-size: 1rem;
+  background-color: #80ccf9;
+  background-image: linear-gradient(to top, #80ccf9 0%, #6992f3 100%);
+  padding: 5px 20px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  margin-bottom: 1vh;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  transition: all 1s;
+  position: fixed;
+  left: 1550px;
+  bottom: 770px;
+}
+
+.startButton a {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-decoration: none;
+}
+
+.startButton:hover {
+  background: #6992f3;
+  color: #fff;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  transform: translate(-2px, -2px);
+}
+
+.rerollButton {
+  font-size: 1rem;
+  background: #6992f3;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 4px;
+  color: black;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.35s;
+  outline: none;
+  margin-bottom: 2vh;
+}
+
+.rerollButton a {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-decoration: none;
+}
+
+.pokeContainer {
+  display: flex;
+  height: 80%;
+  width: 100%;
+  background-image: linear-gradient(to top, #343d42 0%, #4a5053 100%);
+  box-sizing: border-box;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  transition: all 1s;
+}
+
+.mainPokeContainer {
+  margin-top: 60px;
+  margin-left: 40px;
+}
+
+.secondPokeContainer {
+  margin-left: -1rem;
+}
+
+.typing {
+  display: flex;
+  justify-content: center;
+}
+.typing img {
+  height: 40px;
+  width: 40px;
+  margin-top: -1rem;
+}
+
+.counterContainer {
+  position: fixed;
+  top: 200px;
+  right: 130px;
+  color: #fff;
+  font-size: 2rem;
+  transition: all 1s;
+}
+
+.ExitButtonContainer button {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 25px;
+  background-color: #f5f9d2;
+  border: 2px solid #4f685f;
+  border-radius: 50px;
+  font-weight: 500;
+  color: #4f685f;
+  cursor: pointer;
+}
+
+.closeButton {
+  position: fixed;
+  top: 120px;
+  right: 100px;
+  width: 25px;
+  background-color: #f5f9d2;
+  border: 2px solid #4f685f;
+  border-radius: 50px;
+  font-weight: 500;
+  color: #4f685f;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.backSpace {
+  height: 100px;
+}
+
+input {
+  border-radius: 50px;
+  width: 500px;
+  max-height: 30px;
+  padding: 25px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #fcf1fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 7px solid #c8a543;
+  background: linear-gradient(to top, #dad5e1 7px, transparent 1px),
+    linear-gradient(to bottom, #dad5e1 7px, transparent 1px),
+    linear-gradient(to left, #dad5e1 7px, transparent 1px),
+    linear-gradient(to right, #dad5e1 7px, transparent 1px);
+  background-color: rgba(42, 78, 101, 0.5);
+  position: fixed;
+  outline: none;
+  top: 13px;
+  right: 45px;
+  transition: all 1s;
+}
+
+input::placeholder {
+  color: #dad5e1;
+}
+
+.searchButton {
+  position: fixed;
+  top: 30px;
+  right: 70px;
+  transition: all 1s;
+}
+
+.searchButton button {
+  background-color: #f5f9d2;
+  border: 2px solid #4f685f;
+  border-radius: 50px;
+  font-weight: 500;
+  color: #4f685f;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  transition: all 1s;
+}
+
+@media screen and (max-width: 1830px) {
+  .left-content {
+    display: grid;
+    gap: 11px;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 0.2fr 1fr 1fr;
+    justify-content: space-around;
+  }
+  .right-content {
+    left: 1100px;
+  }
+  .loadingScreen img {
+    display: none;
+  }
+
+  .closeButton {
+    right: 300px;
+  }
+
+  .counterContainer {
+    position: fixed;
+    top: 195px;
+    right: 300px;
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  .startButton {
+    font-size: 0.7rem;
+    left: 1250px;
+    bottom: 770px;
+  }
+}
+
+@media screen and (max-width: 1720px) {
+  .closeButton {
+    right: 220px;
+  }
+
+  .counterContainer {
+    right: 220px;
+  }
+}
+
+@media screen and (max-width: 1620px) {
+  .closeButton {
+    right: 130px;
+  }
+
+  .counterContainer {
+    right: 130px;
+  }
+}
+
+@media screen and (max-width: 1520px) {
+  .left-content {
+    display: grid;
+    gap: 11px;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 0.2fr 1fr 1fr;
+    justify-content: space-around;
+  }
+  .right-content {
+    left: 800px;
+  }
+  .loadingScreen img {
+    display: none;
+  }
+  .startButton {
+    font-size: 0.7rem;
+    left: 930px;
+    bottom: 770px;
+  }
+  .closeButton {
+    right: 250px;
+  }
+
+  .counterContainer {
+    right: 250px;
+  }
+
+  .pokeContainer {
+    width: 120%;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .closeButton {
+    right: 170px;
+  }
+
+  .counterContainer {
+    right: 170px;
+  }
+  .pokeContainer {
+    width: 150%;
+  }
+  .right-content {
+    left: 700px;
+  }
+  .startButton {
+    left: 880px;
+  }
+
+  .maxContainer {
+    background-image: url(assets/back.png);
+    background-attachment: fixed;
+    background-size: contain;
+    width: 100%;
+  }
+  .maxContainer2 {
+    background-image: url(assets/back2.png);
+    background-attachment: fixed;
+    background-size: contain;
+    width: 100%;
+  }
+  .maxContainer3 {
+    background-image: url(assets/back3.png);
+    background-attachment: fixed;
+    background-size: contain;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .closeButton {
+    right: 70px;
+  }
+
+  .counterContainer {
+    right: 70px;
+  }
+  .startButton {
+    font-size: 0.7rem;
+    left: 870px;
+    bottom: 770px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .left-content {
+    display: grid;
+    gap: 11px;
+    grid-template-columns: 2fr;
+    grid-template-rows: 0.2fr 1fr 1fr;
+    justify-content: space-around;
+  }
+
+  .closeButton {
+    right: 170px;
+  }
+
+  .counterContainer {
+    right: 170px;
+  }
+  .startButton {
+    left: 610px;
+  }
+  .pokeContainer {
+    width: 200%;
+  }
+  .right-content {
+    left: 400px;
+  }
+
+  .secondPokeContainer {
+    margin-left: 20px;
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .closeButton {
+    right: 100px;
+  }
+
+  .counterContainer {
+    right: 100px;
+  }
+  .secondPokeContainer img {
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .left-content {
+    display: block;
+    margin-left: 68px;
+  }
+  .right-content {
+    width: 100%;
+    top: 90px;
+    left: 0px;
+  }
+
+  .right-content2 {
+    pointer-events: none;
+  }
+
+  .pokeContainer {
+    width: 90%;
+    margin-left: 24px;
+  }
+
+  .loadingScreen img {
+    height: 830px;
+    width: 500px;
+    position: fixed;
+  }
+
+  input {
+    width: 300px;
+    top: 13px;
+  }
+
+  input::placeholder {
+    color: #dad5e1;
+  }
+
+  .startButton {
+    left: 380px;
+  }
+
+  .searchButton {
+    position: fixed;
+    top: 30px;
+  }
+
+  .searchButton button {
+    background-color: #f5f9d2;
+    border: 2px solid #4f685f;
+    border-radius: 50px;
+    font-weight: 500;
+    color: #4f685f;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+  }
+  .secondPokeContainer {
+    margin-left: 100px;
+    width: 30%;
+  }
+
+  .closeButton {
+    top: 120px;
+    right: 100px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .startButton {
+    left: 270px;
+  }
+  .secondPokeContainer {
+    margin-left: 0px;
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .left-content {
+    display: block;
+    margin-left: 68px;
+  }
+  .right-content {
+    width: 100%;
+    top: 90px;
+    left: 0px;
+  }
+
+  .right-content2 {
+    pointer-events: none;
+  }
+
+  .pokeContainer {
+    width: 90%;
+    margin-left: 24px;
+  }
+
+  .loadingScreen img {
+    height: 830px;
+    width: 500px;
+    position: fixed;
+  }
+
+  input {
+    width: 300px;
+    top: 13px;
+    left: 90px;
+  }
+
+  input::placeholder {
+    color: #dad5e1;
+  }
+
+  .startButton {
+    left: 190px;
+  }
+
+  .searchButton {
+    position: fixed;
+    top: 30px;
+    right: 130px;
+  }
+
+  .searchButton button {
+    background-color: #f5f9d2;
+    border: 2px solid #4f685f;
+    border-radius: 50px;
+    font-weight: 500;
+    color: #4f685f;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+  }
+
+  .closeButton {
+    top: 120px;
+    right: 50px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-height: 1000px) {
+  .startButton {
+    top: 100px;
+    height: 4.5%;
+  }
+}

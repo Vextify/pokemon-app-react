@@ -1,0 +1,22 @@
+.main {
+  height: 100%;
+  padding: 25px;
+  border-radius: 10px;
+  box-sizing: border-box;
+
+  color: #fcf1fc;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 7px solid #c8a543;
+  background: linear-gradient(to top, #dad5e1 7px, transparent 1px),
+    linear-gradient(to bottom, #dad5e1 7px, transparent 1px),
+    linear-gradient(to left, #dad5e1 7px, transparent 1px),
+    linear-gradient(to right, #dad5e1 7px, transparent 1px);
+  background-color: #2a4e65;
+}
+.message {
+  text-align: center;
+  font-size: 32px;
+}
