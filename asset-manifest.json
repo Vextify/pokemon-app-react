@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pokemon-app-react/static/css/main.58d40ce1.css",
-    "main.js": "/pokemon-app-react/static/js/main.a2b9a612.js",
+    "main.css": "/pokemon-app-react/static/css/main.274956ea.css",
+    "main.js": "/pokemon-app-react/static/js/main.51a19d0a.js",
     "static/media/BattleTheme.mp3": "/pokemon-app-react/static/media/BattleTheme.5285761e8920c3fc9bba.mp3",
     "static/media/pokeball.gif": "/pokemon-app-react/static/media/pokeball.62584a209344c84ca25d.gif",
     "static/media/pokemon-unite_3840x2160_xtrafondos.com.jpg": "/pokemon-app-react/static/media/pokemon-unite_3840x2160_xtrafondos.com.fb7719fd5e5157713a95.jpg",
@@ -10,16 +10,19 @@
     "static/media/pretty3m.png": "/pokemon-app-react/static/media/pretty3m.ae7854a70eeab62aa18d.png",
     "static/media/pretty2m.png": "/pokemon-app-react/static/media/pretty2m.6a53927318b07f869580.png",
     "static/media/Victory2.mp3": "/pokemon-app-react/static/media/Victory2.be2b1388bbec7c99180d.mp3",
+    "static/media/back.png": "/pokemon-app-react/static/media/back.802f964b922b2f933537.png",
+    "static/media/back2.png": "/pokemon-app-react/static/media/back2.3207884adc4aaf444f98.png",
+    "static/media/back3.png": "/pokemon-app-react/static/media/back3.c2f691f03af31a529196.png",
     "static/media/pretty3.jpg": "/pokemon-app-react/static/media/pretty3.1420cb00e8888b24fc1d.jpg",
     "static/media/Run.mp3": "/pokemon-app-react/static/media/Run.89da136e4a812c3fba26.mp3",
     "static/media/pretty1.png": "/pokemon-app-react/static/media/pretty1.5409d81d99f21fd3914b.png",
     "static/media/pretty1m.png": "/pokemon-app-react/static/media/pretty1m.1e0044abc6e4db94658e.png",
     "index.html": "/pokemon-app-react/index.html",
-    "main.58d40ce1.css.map": "/pokemon-app-react/static/css/main.58d40ce1.css.map",
-    "main.a2b9a612.js.map": "/pokemon-app-react/static/js/main.a2b9a612.js.map"
+    "main.274956ea.css.map": "/pokemon-app-react/static/css/main.274956ea.css.map",
+    "main.51a19d0a.js.map": "/pokemon-app-react/static/js/main.51a19d0a.js.map"
   },
   "entrypoints": [
-    "static/css/main.58d40ce1.css",
-    "static/js/main.a2b9a612.js"
+    "static/css/main.274956ea.css",
+    "static/js/main.51a19d0a.js"
   ]
 }
