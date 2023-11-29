@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/pokemon-app-react/static/css/main.e7943267.css",
+    "main.css": "/pokemon-app-react/static/css/main.c7e17d69.css",
     "main.js": "/pokemon-app-react/static/js/main.0b0d0087.js",
     "static/media/BattleTheme.mp3": "/pokemon-app-react/static/media/BattleTheme.5285761e8920c3fc9bba.mp3",
     "static/media/pokeball.gif": "/pokemon-app-react/static/media/pokeball.62584a209344c84ca25d.gif",
@@ -18,11 +18,11 @@
     "static/media/pretty1.png": "/pokemon-app-react/static/media/pretty1.5409d81d99f21fd3914b.png",
     "static/media/pretty1m.png": "/pokemon-app-react/static/media/pretty1m.1e0044abc6e4db94658e.png",
     "index.html": "/pokemon-app-react/index.html",
-    "main.e7943267.css.map": "/pokemon-app-react/static/css/main.e7943267.css.map",
+    "main.c7e17d69.css.map": "/pokemon-app-react/static/css/main.c7e17d69.css.map",
     "main.0b0d0087.js.map": "/pokemon-app-react/static/js/main.0b0d0087.js.map"
   },
   "entrypoints": [
-    "static/css/main.e7943267.css",
+    "static/css/main.c7e17d69.css",
     "static/js/main.0b0d0087.js"
   ]
 }
