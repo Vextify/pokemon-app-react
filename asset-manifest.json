@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/pokemonreimagined/static/css/main.3dee96ac.css",
+    "main.css": "/pokemonreimagined/static/css/main.cea92bb9.css",
     "main.js": "/pokemonreimagined/static/js/main.47e1afe1.js",
     "static/media/pokeCenter.mp3": "/pokemonreimagined/static/media/pokeCenter.27de5bb8fc00758b02bb.mp3",
     "static/media/BattleTheme.mp3": "/pokemonreimagined/static/media/BattleTheme.5285761e8920c3fc9bba.mp3",
@@ -19,11 +19,11 @@
     "static/media/pretty1.png": "/pokemonreimagined/static/media/pretty1.5409d81d99f21fd3914b.png",
     "static/media/pretty1m.png": "/pokemonreimagined/static/media/pretty1m.1e0044abc6e4db94658e.png",
     "index.html": "/pokemonreimagined/index.html",
-    "main.3dee96ac.css.map": "/pokemonreimagined/static/css/main.3dee96ac.css.map",
+    "main.cea92bb9.css.map": "/pokemonreimagined/static/css/main.cea92bb9.css.map",
     "main.47e1afe1.js.map": "/pokemonreimagined/static/js/main.47e1afe1.js.map"
   },
   "entrypoints": [
-    "static/css/main.3dee96ac.css",
+    "static/css/main.cea92bb9.css",
     "static/js/main.47e1afe1.js"
   ]
 }
